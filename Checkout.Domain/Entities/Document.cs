@@ -7,13 +7,11 @@ namespace Checkout.Domain.Entities
     {
         public Document(string number)
         {
-            Id = Guid.NewGuid();    
             Number = number;
 
             if (Validate(number)) throw new Exception("Document invalid");
         }
 
-        public Guid Id { get; private set; }
         public string Number { get; private set; }
 
         public bool Validate(string doc)

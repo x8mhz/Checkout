@@ -7,7 +7,6 @@ namespace Checkout.Domain.Entities
         public string value = string.Empty;
         public OrderCode(DateTime date, int sequence)
         {
-            Id = Guid.NewGuid();    
             Date = date;
             Sequence = sequence;
 
@@ -18,7 +17,6 @@ namespace Checkout.Domain.Entities
             value = Convert.ToString(year + sequence8Char);
         }
 
-        public Guid Id { get; private set; }
         public DateTime Date { get; private set; }
         public int Sequence { get; private set; }
     }
