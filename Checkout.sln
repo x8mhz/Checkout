@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{CCC7D2CF-1DAE-4993-B71C-BC57D676BE38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{0035C461-F9BC-43A1-8EDC-10BFFD8801E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{EF2F7E2B-BF72-4235-A81B-3DD3F417238A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{AEBE196E-55CF-4FA6-B74D-F89EB02EDB27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1 - Data", "3.1 - Data", "{8B3259F0-3269-4142-83AE-E2E6A62B76C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.2 - CrossCutting", "3.2 - CrossCutting", "{31946C0A-8BC7-4EB6-B500-2EC78C0C458F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Domain", "Checkout.Domain\Checkout.Domain.csproj", "{6511020A-C9ED-4498-93B9-3CCD6CF7B7A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6511020A-C9ED-4498-93B9-3CCD6CF7B7A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6511020A-C9ED-4498-93B9-3CCD6CF7B7A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6511020A-C9ED-4498-93B9-3CCD6CF7B7A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6511020A-C9ED-4498-93B9-3CCD6CF7B7A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B3259F0-3269-4142-83AE-E2E6A62B76C4} = {AEBE196E-55CF-4FA6-B74D-F89EB02EDB27}
+		{31946C0A-8BC7-4EB6-B500-2EC78C0C458F} = {8B3259F0-3269-4142-83AE-E2E6A62B76C4}
+		{6511020A-C9ED-4498-93B9-3CCD6CF7B7A8} = {EF2F7E2B-BF72-4235-A81B-3DD3F417238A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55B0DBFB-7827-4272-9015-8B9B2EB08112}
+	EndGlobalSection
+EndGlobal
