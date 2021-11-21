@@ -4,6 +4,11 @@ namespace Checkout.Domain.Entities
 {
     public class OrderItem
     {
+        protected OrderItem()
+        {
+
+        }
+
         public OrderItem(int itemId, decimal price, int quantity)
         {
             Id = Guid.NewGuid();
@@ -16,6 +21,9 @@ namespace Checkout.Domain.Entities
         public int ItemId { get; private set; }
         public decimal Price { get; private set; }
         public int Quantity { get; private set; }
+
+
+        public virtual Order Order { get; set; }
 
         public decimal GetTotal()
         {

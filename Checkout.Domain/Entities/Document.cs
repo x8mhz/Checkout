@@ -5,6 +5,11 @@ namespace Checkout.Domain.Entities
 {
     public class Document
     {
+        protected Document()
+        {
+
+        }
+
         public Document(string number)
         {
             Number = number;

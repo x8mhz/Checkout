@@ -1,11 +1,6 @@
 ﻿using Checkout.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Checkout.Infra.Data.Mapping
 {
@@ -29,6 +24,9 @@ namespace Checkout.Infra.Data.Mapping
 
             builder.Property(x => x.Coupon)
                 .IsRequired();
+
+            builder.HasMany(x => x.OrderItems)
+                .WithOne(x => x.Order);
         }
     }
 }

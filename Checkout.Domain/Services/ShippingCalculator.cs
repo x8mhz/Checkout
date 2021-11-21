@@ -2,14 +2,14 @@
 
 namespace Checkout.Domain.Services
 {
-    public  class ShippingCalculator
+    public class ShippingCalculator
     {
         public ShippingCalculator(Item item)
         {
             Item = item;
         }
 
-        public Item Item{ get; private set; }
+        public Item Item { get; private set; }
 
         public decimal Shipping()
         {

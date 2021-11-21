@@ -5,6 +5,10 @@ namespace Checkout.Domain.Entities
 {
     public class Order
     {
+        protected Order()
+        {
+
+        }
 
         public Order(string document, DateTime issueDate, int seguence = 1)
         {
@@ -25,7 +29,7 @@ namespace Checkout.Domain.Entities
         public Coupon Coupon { get; private set; }
         public OrderCode Code { get; private set; }
 
-        public virtual ICollection<OrderItem> OrderItems { get; private set; }
+        public virtual ICollection<OrderItem> OrderItems { get; set; }
 
 
         public void AddItem(Item item, int quantity)

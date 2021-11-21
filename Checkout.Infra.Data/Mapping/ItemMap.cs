@@ -17,9 +17,6 @@ namespace Checkout.Infra.Data.Mapping
                 .HasMaxLength(50)
                 .IsRequired();
 
-            builder.Property(x => x.Volume)
-                .IsRequired();
-
             builder.Property(x => x.Description)
                 .HasMaxLength(200)
                 .IsRequired();

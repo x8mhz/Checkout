@@ -4,11 +4,15 @@ namespace Checkout.Domain.Entities
 {
     public class Item
     {
-        public Item(int itemId, int volume, string category, string description, decimal price, decimal width, decimal height, decimal lenght, decimal weight)
+        protected Item()
+        {
+
+        }
+
+        public Item(int itemId, string category, string description, decimal price, decimal width, decimal height, decimal lenght, decimal weight)
         {
             Id = Guid.NewGuid();
             ItemId = itemId;
-            Volume = volume;
             Category = category;
             Description = description;
             Price = price;
@@ -20,8 +24,6 @@ namespace Checkout.Domain.Entities
 
         public Guid Id { get; private set; }
         public int ItemId { get; private set; }
-
-        public int Volume { get; private set; }
         public string Category { get; private set; }
         public string Description { get; private set; }
         public decimal Price { get; private set; }

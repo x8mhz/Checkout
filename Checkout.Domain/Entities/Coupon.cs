@@ -4,6 +4,11 @@ namespace Checkout.Domain.Entities
 {
     public class Coupon
     {
+        protected Coupon()
+        {
+
+        }
+
         public Coupon(string code, decimal percentage, DateTime expireDate)
         {
             Id = Guid.NewGuid();
